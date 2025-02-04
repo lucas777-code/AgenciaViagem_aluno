@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', serif;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background: #42A703;
+    color: azure;
+    padding: 15px;
+    text-align: center;
+}
+
+h1{
+    font-family: "dancing-script", serif;
+    font-size: 2.5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: url(img/london.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.sidebar{
+    flex: 1;
+    min-width: 200px;
+    background-color: #EDEBB7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.main-content{
+    flex: 2;
+    min-width: 300px;
+    padding: 15px;
+}
+
+.subtitle{
+    color: #f1f1f1;
+    font-size: 2.5rem;
+}
+
+.secondary{
+    flex: 1;
+    min-width: 200px;
+    background: #EDEBB7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+li{
+    padding: 9px;
+}
+
+footer{
+    background-color: #42A703;
+    color: azure;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input{
+    background: #EDEBB7;
+}
+
+input[type="text"]::placeholder{
+    color: #B1AF73;
+}
+
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-datetime-edit-year-field{
+    color: #67664C
+}
+
+button{
+    background-color: #42A703;
+    color: azure;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover{
+    background: #338003;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+}
